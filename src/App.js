@@ -1,5 +1,22 @@
 import {DogList} from './components/DogList';
 import './App.css';
+const dogData = [
+  {
+    name: "Wishbone",
+    favoriteToy: "Squeaker",
+    chipNumber: "82373",
+  },
+  {
+    name: "Appa",
+    favoriteToy: "Ball",
+    chipNumber: "29238",
+  },
+  {
+    name: "Jimminy",
+    favoriteToy: "Bone",
+    chipNumber: "72902",
+  }
+];
 
 function App() {
   return (
@@ -7,7 +24,7 @@ function App() {
       <h1>
         The Dog App
       </h1>
-      <DogList>1111</DogList>
+      <DogList>dogs={dogData}</DogList>
     </main>
   ); 
 }
